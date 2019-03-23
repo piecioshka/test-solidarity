@@ -1,0 +1,56 @@
+{
+    "$schema": "https://raw.githubusercontent.com/infinitered/solidarity/master/solidaritySchema.json",
+    "config": {
+        "output": "verbose"
+    },
+    "requirements": {
+        "Git": [
+            {
+                "rule": "cli",
+                "binary": "git"
+            },
+            {
+                "rule": "shell",
+                "command": "git config user.name",
+                "match": ".+"
+            },
+            {
+                "rule": "shell",
+                "command": "git config user.email",
+                "match": ".+@.+"
+            }
+        ],
+        "Node.js": [
+            {
+                "rule": "cli",
+                "binary": "node",
+                "semver": "^10.0.0"
+            }
+        ],
+        "npm": [
+            {
+                "rule": "cli",
+                "binary": "npm",
+                "semver": "^6.0.0"
+            }
+        ],
+        "Docker": [
+            {
+                "rule": "cli",
+                "binary": "docker"
+            }
+        ],
+        "Visual Studio Code": [
+            {
+                "rule": "cli",
+                "binary": "code"
+            }
+        ],
+        "Google Chrome": [
+            {
+                "rule": "cli",
+                "binary": "Google Chrome.app"
+            }
+        ]
+    }
+}
