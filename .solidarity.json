@@ -7,7 +7,8 @@
         "Git": [
             {
                 "rule": "cli",
-                "binary": "git"
+                "binary": "git",
+                "semver": "^2.0.0"
             },
             {
                 "rule": "shell",
@@ -34,12 +35,6 @@
                 "semver": "^6.0.0"
             }
         ],
-        "Docker": [
-            {
-                "rule": "cli",
-                "binary": "docker"
-            }
-        ],
         "Visual Studio Code": [
             {
                 "rule": "cli",
@@ -48,8 +43,21 @@
         ],
         "Google Chrome": [
             {
+                "rule": "dir",
+                "location": "/Applications/Google Chrome.app/",
+                "platform": "darwin"
+            },
+            {
+                "rule": "dir",
+                "location": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "platform": "windows"
+            }
+        ],
+        "Docker": [
+            {
                 "rule": "cli",
-                "binary": "Google Chrome.app"
+                "binary": "docker",
+                "version": "^18.0.0"
             }
         ]
     }
