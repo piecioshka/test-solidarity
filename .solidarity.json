@@ -25,14 +25,14 @@
             {
                 "rule": "cli",
                 "binary": "node",
-                "semver": "^10.0.0"
+                "semver": ">=10.x.x"
             }
         ],
         "npm": [
             {
                 "rule": "cli",
                 "binary": "npm",
-                "semver": "^6.0.0"
+                "semver": ">=6.x.x"
             }
         ],
         "Visual Studio Code": [

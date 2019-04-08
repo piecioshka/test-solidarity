@@ -2,10 +2,7 @@
     "private": true,
     "name": "test-solidarity",
     "scripts": {
-        "test": "solidarity",
-        "report": "solidarity report"
-    },
-    "dependencies": {
-        "solidarity": "^2.3.1"
+        "test": "npx solidarity",
+        "report": "npx solidarity report"
     }
 }
