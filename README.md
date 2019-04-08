@@ -1,6 +1,6 @@
 # test-solidarity
 
-:ledger: Testing environment with [Solidarity](https://infinitered.github.io/solidarity/)
+:ledger: Environment verification with [Solidarity](https://infinitered.github.io/solidarity/)
 
 ## Testing environment
 
