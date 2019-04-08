@@ -2,7 +2,7 @@
     "private": true,
     "name": "test-solidarity",
     "scripts": {
-        "test": "npx solidarity",
+        "verify": "npx solidarity",
         "report": "npx solidarity report"
     }
 }

@@ -2,7 +2,7 @@
 
 :ledger: Environment verification with [Solidarity](https://infinitered.github.io/solidarity/)
 
-## Verify the environment
+## Run environment verification
 
 * Remote mode _(without cloning repo)_
 
@@ -13,14 +13,22 @@
 * Local mode _(with clone repo)_
 
     ```bash
-    npm run test
+    npm run verify
     ```
 
-## Display report of environment _(only local mode)_
+## Display report of environment verification
 
-```bash
-npm run report
-```
+* Remote mode _(without cloning repo)_
+
+    ```bash
+    bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/report.sh)"
+    ```
+
+* Local mode _(with clone repo)_
+
+    ```bash
+    npm run report
+    ```
 
 ## List of tools what are verify
 
