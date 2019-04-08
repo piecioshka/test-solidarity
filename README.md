@@ -4,9 +4,17 @@
 
 ## Testing environment
 
-```bash
-npm run test # solidarity
-```
+* Remote (without cloning repo)
+
+    ```bash
+    bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/verify.sh)"
+    ```
+
+* Local (with clone repo)
+
+    ```bash
+    npm run test
+    ```
 
 ## Display report of environment
 
