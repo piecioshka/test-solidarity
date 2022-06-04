@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version="1.3.1"
+version="1.3.2"
 
 echo "An environment verification with Solidarity, v${version}"
 echo -e "Copyright 2022, Piotr Kowalski <piecioshka@gmail.com> https://piecioshka.pl\n"
@@ -13,28 +13,28 @@ usage() {
 
 mode=$1 # Modes: base, docker, mongodb
 type=$2 # Types: solidarity, report
-dir=".tmp-solidarity/"
+dir=".tmp-solidarity"
 
 # ------------------------------------------------------------------------------
 if [[ $mode != @(base|docker|mongodb) ]]; then
-    echo -e "Error: not supported mode: $mode\n"
+    echo -e "Error: not supported mode: \"$mode\"\n"
     usage
-    echo -e "\nPlese select mode from: base, docker, mongodb"
+    echo -e "\nPlese select a mode from the list:"
+    echo -e "  base, docker, mongodb"
     exit
 fi
 
 # ------------------------------------------------------------------------------
 if [[ $type != @(solidarity|report) ]]; then
-    echo -e "Error: not supported type: $type\n"
+    echo -e "Error: not supported type: \"$type\"\n"
     usage
-    echo -e "\nPlease select type from: solidarity, report"
+    echo -e "\nPlease select a type from the list:"
+    echo -e "  solidarity, report"
     exit
 fi
 
 # ------------------------------------------------------------------------------
-mkdir $dir
-curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/$type/.solidarity.json > $dir/.solidarity.json
-echo $dir/.solidarity.json
-cat $dir/.solidarity.json
+mkdir -p $dir
+curl -sSL "https://raw.githubusercontent.com/piecioshka/test-solidarity/master/$mode/.solidarity.json" > "$dir/.solidarity.json"
 npx solidarity $type -f $dir/.solidarity.json
-# rm -rf $dir/
+rm -rf $dir/
