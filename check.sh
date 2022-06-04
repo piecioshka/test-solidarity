@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-version="1.3.0"
+version="1.3.1"
 
 echo "An environment verification with Solidarity, v${version}"
 echo -e "Copyright 2022, Piotr Kowalski <piecioshka@gmail.com> https://piecioshka.pl\n"
 
 usage() {
-    echo -e "Usage: check.sh [type] [mode]"
+    echo -e "Usage: check.sh [mode] [type]"
     echo -e "  $ check.sh base solidarity"
     echo -e "  $ check.sh base report"
 }
@@ -17,20 +17,22 @@ dir=".tmp-solidarity/"
 
 # ------------------------------------------------------------------------------
 if [[ $mode != @(base|docker|mongodb) ]]; then
-    usage;
+    echo -e "Error: not supported mode: $mode\n"
+    usage
     echo -e "\nPlese select mode from: base, docker, mongodb"
-    exit;
+    exit
 fi
 
 # ------------------------------------------------------------------------------
 if [[ $type != @(solidarity|report) ]]; then
-    usage;
+    echo -e "Error: not supported type: $type\n"
+    usage
     echo -e "\nPlease select type from: solidarity, report"
-    exit;
+    exit
 fi
 
 npx solidarity $type -f $mode/.solidarity.json
-exit;
+exit
 
 # ------------------------------------------------------------------------------
 mkdir $dir
