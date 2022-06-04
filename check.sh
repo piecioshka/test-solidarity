@@ -31,11 +31,10 @@ if [[ $type != @(solidarity|report) ]]; then
     exit
 fi
 
-npx solidarity $type -f $mode/.solidarity.json
-exit
-
 # ------------------------------------------------------------------------------
 mkdir $dir
 curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/$type/.solidarity.json > $dir/.solidarity.json
+echo $dir/.solidarity.json
+cat $dir/.solidarity.json
 npx solidarity $type -f $dir/.solidarity.json
-rm -rf $dir/
+# rm -rf $dir/
