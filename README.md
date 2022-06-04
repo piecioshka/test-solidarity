@@ -15,7 +15,7 @@
 * :white_check_mark: Google Chrome (macOS, Windows)
 
 ```bash
-bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh) base solidarity"
+bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh)" -c "base" "solidarity"
 ```
 
 ### Docker
@@ -23,7 +23,7 @@ bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarit
 * :white_check_mark: Docker `>=20.0.0`
 
 ```bash
-bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh) docker solidarity"
+bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh)" -c "docker" "solidarity"
 ```
 
 ### MongoDB
@@ -32,7 +32,7 @@ bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarit
 * :white_check_mark: MongoDB Compass
 
 ```bash
-bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh) mongodb solidarity"
+bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh)" -c "mongodb" "solidarity"
 ```
 
 ## How to generate a report?
@@ -40,5 +40,5 @@ bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarit
 To generate a report please run:
 
 ```bash
-bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh) base report"
+bash -c "$(curl -sSL https://raw.githubusercontent.com/piecioshka/test-solidarity/master/check.sh)" -c "base" "report"
 ```
