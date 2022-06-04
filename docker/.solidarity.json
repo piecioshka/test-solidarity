@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/infinitered/solidarity/master/solidaritySchema.json",
+    "config": {
+        "output": "verbose"
+    },
+    "requirements": {
+        "Docker": [
+            {
+                "rule": "cli",
+                "binary": "docker",
+                "semver": ">=20.0.0",
+                "version": "--version"
+            }
+        ]
+    }
+}

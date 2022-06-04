@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/infinitered/solidarity/master/solidaritySchema.json",
+    "config": {
+        "output": "verbose"
+    },
+    "requirements": {
+        "MongoDB": [
+            {
+                "rule": "cli",
+                "binary": "mongod",
+                "semver": ">=5.0.0",
+                "version": "--version"
+            }
+        ],
+        "MongoDB Compass": [
+            {
+                "rule": "dir",
+                "location": "/Applications/MongoDB Compass.app/",
+                "platform": "darwin"
+            }
+        ]
+    }
+}
