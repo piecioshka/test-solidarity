@@ -35,6 +35,21 @@
                 "semver": ">=6.x.x"
             }
         ],
+        "SSH": [
+            {
+                "rule": "cli",
+                "binary": "ssh",
+                "version": "-V"
+            }
+        ],
+        "GitHub": [
+            {
+                "rule": "shell",
+                "__comment__": "Redirect stderr to stdout",
+                "command": "ssh -T git@github.com 2>&1",
+                "match": "You've successfully authenticated"
+            }
+        ],
         "Visual Studio Code": [
             {
                 "rule": "cli",

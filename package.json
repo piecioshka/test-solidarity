@@ -1,8 +1,11 @@
 {
-    "private": true,
-    "name": "test-solidarity",
-    "scripts": {
-        "verify": "npx solidarity",
-        "report": "npx solidarity report"
-    }
+  "private": true,
+  "name": "test-solidarity",
+  "version": "1.2.0",
+  "description": "An environment verification with Solidarity",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl"
+  }
 }

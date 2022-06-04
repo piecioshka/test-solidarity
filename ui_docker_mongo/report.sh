@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version="1.1.0"
+version="1.2.0"
 
 echo "Display environment verification report with Solidarity, v${version}"
 echo -e "Copyright 2022, Piotr Kowalski <piecioshka@gmail.com> https://piecioshka.pl\n"
