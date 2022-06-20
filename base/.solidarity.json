@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/infinitered/solidarity/master/solidaritySchema.json",
   "config": {
-    "output": "verbose"
+    "output": "moderate"
   },
   "requirements": {
     "Git": [
