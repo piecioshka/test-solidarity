@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/infinitered/solidarity/master/solidaritySchema.json",
   "config": {
-    "output": "moderate"
+    "output": "verbose"
   },
   "requirements": {
     "Git": [
@@ -67,6 +67,11 @@
       {
         "rule": "dir",
         "location": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+        "platform": "windows"
+      },
+      {
+        "rule": "dir",
+        "location": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
         "platform": "windows"
       }
     ]
