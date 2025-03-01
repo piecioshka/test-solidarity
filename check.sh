@@ -35,6 +35,6 @@ fi
 
 # ------------------------------------------------------------------------------
 mkdir -p $dir
-curl -sSL "https://raw.githubusercontent.com/piecioshka/test-solidarity/master/$mode/.solidarity.json" > "$dir/.solidarity.json"
+curl -sSL "https://raw.githubusercontent.com/piecioshka/test-solidarity/main/$mode/.solidarity.json" > "$dir/.solidarity.json"
 npx solidarity $type -f $dir/.solidarity.json
 rm -rf $dir/
